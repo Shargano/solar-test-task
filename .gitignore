@@ -1,0 +1,14 @@
+.idea/
+.vscode/
+.bsp/
+
+.metals/
+metals.sbt
+.bloop/
+
+target/
+
+*.log
+*.log.*
+.env
+/scalafmt
