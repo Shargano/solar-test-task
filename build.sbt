@@ -16,6 +16,8 @@ scalacOptions ++= List(
 )
 
 assemblyMergeStrategy in assembly := {
+  case x if x.contains("io.netty.versions.properties") =>
+    MergeStrategy.discard
   case PathList("META-INF", "maven", "org.webjars", "swagger-ui", "pom.properties") =>
     MergeStrategy.singleOrError
   case x =>
